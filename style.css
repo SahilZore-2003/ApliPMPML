@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+body {
+    background-color: rgba(255, 192, 203, 0.461);
+    padding: 1rem;
+
+}
+
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    height: 10%;
+}
+
+
+.icon img {
+    mix-blend-mode: multiply;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.topbar .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar .links a {
+    display: inline-block;
+    padding: 0 10px;
+    white-space: nowrap;
+    color: black;
+}
+
+.main-container {
+    background-color: white;
+    padding-top: 0px;
+    border-radius: 15px;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+
+.main-container h2 {
+    text-align: center;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.content {
+    background-color: white;
+}
+
+.content .information {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    border-bottom: 2px dotted gray;
+}
+
+.content .information::before {
+    content: '';
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    position: absolute;
+    bottom: -20%;
+    left: -8%;
+    background-color: rgba(255, 192, 203, 0.461);
+    border-radius: 100%;
+    z-index: 100;
+}
+
+.content .information::after {
+    content: '';
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    position: absolute;
+    bottom: -20%;
+    right: -8%;
+    background-color: rgba(255, 192, 203, 0.461);
+    border-radius: 100%;
+    z-index: 100;
+}
+
+.content .booking {
+    display: flex;
+    padding: 40px 20px;
+    padding-bottom: 10px;
+
+}
+
+.content .booking>div {
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+.content .booking small {
+    font-weight: bold;
+}
+
+.srl-number {
+    text-align: center;
+}
+
+.logo-container {
+    margin: 20px 0;
+    display: grid;
+    place-items: center;
+}
+
+.logo-container img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    animation: animate 2s infinite ease-in-out;
+}
+
+@keyframes animate {
+    0%{
+        scale: 10%;
+    }
+    50%{
+        scale: 100%;
+    }
+    100%{
+        scale: 10%;
+    }
+}
+
+.qrcodebtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(120, 241, 120, 0.729);
+    border: 1px solid rgb(7, 134, 7);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.qrcodebtn p{
+    padding-left: 10px;
+}
+
+.qrcodebtn div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.qrcodebtn img{
+    width: 30px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
