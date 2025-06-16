@@ -134,18 +134,20 @@ body {
 }
 
 @keyframes animate {
-    0%{
+    0% {
         scale: 10%;
     }
-    50%{
+
+    50% {
         scale: 100%;
     }
-    100%{
+
+    100% {
         scale: 10%;
     }
 }
 
-.qrcodebtn{
+.qrcodebtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,24 +159,24 @@ body {
     color: green;
 }
 
-.qrcodebtn p{
+.qrcodebtn p {
     padding-left: 10px;
 }
 
-.qrcodebtn div{
+.qrcodebtn div {
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;
 }
 
-.qrcodebtn img{
+.qrcodebtn img {
     width: 30px;
     object-fit: contain;
     mix-blend-mode: multiply;
 }
 
-.time{
+.time {
     margin-top: 20px;
     background-color: red;
     color: white;
@@ -182,7 +184,7 @@ body {
     text-align: center;
 }
 
-.expire{
+.expire {
     background-color: rgba(211, 211, 211, 0.393);
     text-align: center;
     padding-top: 10px;

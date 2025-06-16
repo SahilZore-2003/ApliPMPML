@@ -1,4 +1,5 @@
 const expireDiv = document.getElementById("expireTime");
+const dateDiv = document.querySelectorAll(".date");
 
 function getTimeUntilNextNoon() {
     const now = new Date();
@@ -18,10 +19,14 @@ setInterval(() => {
     expireDiv.innerText = getTimeUntilNextNoon()
 }, 1000)
 
-// const colors = ["#f44336", "#4CAF50", "#2196F3", "#FF9800", "#9C27B0"];
-// let index = 0;
-// document.body.onclick = function () {
-//     // Change background color
-//     document.body.style.backgroundColor = colors[index];
-//     index = (index + 1) % colors.length;
-//   };
+function getFormattedDate() {
+    const date = new Date();
+
+    const day = date.getDate();
+    const month = date.toLocaleString('en-US', { month: 'short' });
+    const year = date.getFullYear();
+
+    return `${day} ${month} ${year}`;
+}
+
+dateDiv.forEach((e) => e.innerText = getFormattedDate())
